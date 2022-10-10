@@ -1,0 +1,25 @@
+@import url(header.css);
+@import url(card.css);
+
+:root{
+  font-size: 10px;
+}
+
+* { 
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  background-color: #212121;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}

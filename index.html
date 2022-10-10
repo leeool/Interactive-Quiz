@@ -4,10 +4,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>DevQuiz</title>
 </head>
 <body>
-  
+  <nav class="header">
+    <div class="header-content">
+      <h2 class="subtitle-header item"><a href="./">Meu portfólio</a></h2>
+      <h1 class="title-header item">DevQuiz</h1>
+      <h2 class="subtitle-header item">Github</h2>
+    </div>
+  </nav>
+
+  <div class="container">
+
+      <div class="card-content" id="p1">
+        <h3>1° Pergunta</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <ul class="questions">
+          <li class="button select incorreta">Lorem ipsum dolor sit amet.</li>
+          <li class="button select incorreta">Lorem ipsum dolor sit amet.</li>
+          <li class="button select incorreta">Lorem ipsum dolor sit amet.</li>
+          <li class="button select correta">Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </div>
+      
+      <div class="card-content d-none" id="p2">
+        <h3>1° Pergunta</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <ul class="questions">
+          <li class="button">Lorem ipsum dolor sit amet.</li>
+          <li class="button">Lorem ipsum dolor sit amet.</li>
+          <li class="button">Lorem ipsum dolor sit amet.</li>
+          <li class="button">Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </div>
+
+      <div class="card-content d-none" id="p3">
+        <h3>1° Pergunta</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <ul class="questions">
+          <li class="button">Lorem ipsum dolor sit amet.</li>
+          <li class="button">Lorem ipsum dolor sit amet.</li>
+          <li class="button">Lorem ipsum dolor sit amet.</li>
+          <li class="button">Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </div>
+
+      <div class="card-content d-none" id="p4">
+        <h3>1° Pergunta</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <ul class="questions">
+          <li class="button" value="A">Lorem ipsum dolor sit amet.</li>
+          <li class="button" value="B">Lorem ipsum dolor sit amet.</li>
+          <li class="button" value="C">Lorem ipsum dolor sit amet.</li>
+          <li class="button" value="D">Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </div>
+
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
