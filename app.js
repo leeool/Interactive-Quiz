@@ -5,31 +5,36 @@ const cards = document.querySelectorAll(".card-content")
 
 let score = 0
 
-// console.log(questions)
-
-questions.forEach((question, index) => {
+console.log()
+let cardCounter = 0
+questions.forEach((question) => {
   question.addEventListener("click", event => {
     const correctAnswer = document.querySelector(".correta")
-    const incorretAnswer = document.querySelectorAll(".incorreta")
-  
-    if(event.target !== correctAnswer){
-      incorretAnswer.forEach(element => {
-        element.classList.add("incorrect-answer")
-        element.classList.remove("select")
-        correctAnswer.classList.add("correct-answer")
-        return
-      }) 
-    }
-    correctAnswer.classList.add("correct-answer")
-    correctAnswer.classList.remove("select")
-    let cardCounter = 0
-    cardCounter += 1
 
+    if(event.target !== correctAnswer && event.target.nodeName !== "UL"){
+      event.target.classList.add("incorrect-answer")
+      event.target.classList.remove("select")
+      correctAnswer.classList.add("correct-answer")
+      } 
+      else if(event.target.nodeName !== "UL"){
+      correctAnswer.classList.add("correct-answer")
+      correctAnswer.classList.remove("select")
+    }
+
+    
+    cardCounter += 1
+    
     cards[cardCounter].classList.remove("d-none")
 
-    // cards.forEach((card) => {
-    //   card.classList.remove("d-none")
-    // })
+    setTimeout(() => {
+      scrollTo({
+        top: 600,
+        left: 0,
+        behavior: "smooth"
+      })
+    }, 1000);
+
+
 
   })
 })
